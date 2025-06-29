@@ -9,24 +9,24 @@ from pyrogram import filters
 load_dotenv()
 # ------------------------------------
 # -----------------------------------------------------
-API_ID = int(getenv("API_ID","23803580"))
-API_HASH = getenv("API_HASH","7d91da02949db09dc81df55532c93863")
+API_ID = int(getenv("API_ID","28209312"))
+API_HASH = getenv("API_HASH","89def84a7894bb696ff20174c86889a4")
 # ------------------------------------------------------
 BOT_TOKEN = getenv("BOT_TOKEN","7953139932:AAGzXvqUklOpNBxtqwJ7xeGHg2m26ODSubM")
 # -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME","NoMoreMaxim")
+OWNER_USERNAME = getenv("OWNER_USERNAME","X7Ahad")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "NishaMusix_Bot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "EvilAddiction_bot")
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME" , "𝐍ɪsʜᴀ 𝚡 𝐌ᴜsɪᴄ")
+BOT_NAME = getenv("BOT_NAME" , "ᴍᴜsɪᴄ丶𝐀ᴅᴅɪᴄᴛɪᴏɴ")
 # ---------------------------------------------------------
-ASSUSERNAME = getenv("ASSUSERNAME" , "CuteNishaa")
+ASSUSERNAME = getenv("ASSUSERNAME" , "AssistantxMusic")
 # ---------------------------------------------------------
 
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://nishamusic:Nothing0000@nishamusicbot.dg20jss.mongodb.net/?retryWrites=true&w=majority&appName=NishaMusicBot")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://ahaan:ahaad@ahaan.hgkeruq.mongodb.net/?retryWrites=true&w=majority&appName=ahaan")
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 
@@ -35,10 +35,10 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", "-1002553338682"))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002740659166"))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", "7381712992"))
+OWNER_ID = int(getenv("OWNER_ID", "7710841624"))
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 
@@ -53,7 +53,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # ----------------------------------------------------------------
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/BUG-MUSIX/NishaMusic",
+    "https://github.com/Ahad611/MUSIC-MANAGEMENT",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
@@ -67,8 +67,8 @@ GIT_TOKEN = getenv(
 
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/SpicyxNetwork")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+hXY2z-kpAokwMDll")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Musicxbot_updates")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+Ay_8Q6xrMbtkOTll")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
