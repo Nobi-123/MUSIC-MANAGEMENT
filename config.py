@@ -26,7 +26,7 @@ ASSUSERNAME = getenv("ASSUSERNAME" , "AssistantxMusic")
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://ahaan:ahaad@ahaan.hgkeruq.mongodb.net/?retryWrites=true&w=majority&appName=ahaan")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://deepak-bot:LoRm7nrAqVs2xncW@cluster0.hnp8icx.mongodb.net/?retryWrites=true&w=majority")
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 
