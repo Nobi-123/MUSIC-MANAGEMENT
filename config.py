@@ -35,10 +35,10 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", "-1002740659166"))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002681848382"))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", "7710841624"))
+OWNER_ID = int(getenv("OWNER_ID", "7694170809"))
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 
@@ -68,7 +68,7 @@ GIT_TOKEN = getenv(
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Addiction_World")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+Ay_8Q6xrMbtkOTll")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/CardioXsupport")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
@@ -114,7 +114,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 # ------------------------------------
 # ------------------------------------
 # ------------------------------------
-STRING1 = getenv("STRING_SESSION",  "BQFrNrwAllBxwMoFCJTPrICEbtl0zOZ1dabVObhPRgVklQETKmYj_qs5RmqkvRGDv-5RghzesjkYbOzPvGBCD9GLsPnXF1i72BROvUbpExZmJCypxGA3eZK4qpHXfX8IaioTsIt3ZdlDhDuiIu61fUA0SZuCoRKD8eTfuwnvvnYQuO3aCsviQ312eaKCKkhClCQByC9MK9pdv82FR3r-qZxekj17ZJXou5uT4TwvDk3H_U7fnjf-GqHid84mmll5uYpqkmtjf43dw6EcTtKotv3CTZgnqcpHmcdylFLNb6xhKtzd-L-OtlbVmE_wJXaua3Gk9BkyxQmYh8DvDWbeOeh0KH6U-QAAAAF0VV_2AA")
+STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
