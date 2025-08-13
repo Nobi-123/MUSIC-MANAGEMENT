@@ -120,11 +120,7 @@ Sᴇᴀʀᴄʜ ᴄᴏᴍᴍᴀɴᴅꜱ:
 • /google <query> : Search the google for the given query.
 • /anime <query>  : Search myanimelist for the given query.
 • /stack <query>  : Search stackoverflow for the given query.
-• /image (/imgs) <query> : Get the images regarding to your query
 
-Example:
-/google pyrogram: return top 5 reuslts.
-'''
 
     HELP_Font = '''ғᴏɴᴛ
 
