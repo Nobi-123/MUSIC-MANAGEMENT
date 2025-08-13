@@ -1,3 +1,4 @@
+class Helper :
 HELP_1 = """
 <b><u>ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs :</u></b>
 
