@@ -121,6 +121,7 @@ Sᴇᴀʀᴄʜ ᴄᴏᴍᴍᴀɴᴅꜱ:
 • /anime <query>  : Search myanimelist for the given query.
 • /stack <query>  : Search stackoverflow for the given query.
 
+
     HELP_Font = '''ғᴏɴᴛ
 
 ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ ғᴏɴᴛ ᴍᴏᴅᴜʟᴇ:
@@ -221,8 +222,8 @@ Sᴇᴀʀᴄʜ ᴄᴏᴍᴍᴀɴᴅꜱ:
 
 ◌ /q r : ᴄʀᴇᴀᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ ʀᴇᴘʟʏ
 '''
-    
-    
+
+
     fullpromote = {
     'can_change_info': True,
     'can_post_messages': True,
