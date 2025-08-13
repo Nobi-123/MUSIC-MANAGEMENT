@@ -1,249 +1,128 @@
-# helper for strings
+HELP_1 = """
+<b><u>ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs :</u></b>
 
-class Helper(object):
-    HELP_M = '''ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴀᴛᴇɢᴏʀʏ ғᴏʀ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴɴᴀ ɢᴇᴛ ʜᴇʟᴩ.
-ᴀsᴋ ʏᴏᴜʀ ᴅᴏᴜʙᴛs ᴀᴛ sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ
+ᴊᴜsᴛ ᴀᴅᴅ <b>ᴄ</b> ɪɴ ᴛʜᴇ sᴛᴀʀᴛɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴜsᴇ ɪᴛ ғᴏʀ ᴄʜᴀɴɴᴇʟ.
 
-ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /'''
-    HELP_ChatGPT = '''CʜᴀᴛGPT
+<b>/pause</b> : ᴩᴀᴜsᴇ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ.  
+<b>/resume</b> : ʀᴇsᴜᴍᴇ ᴛʜᴇ ᴩᴀᴜsᴇᴅ sᴛʀᴇᴀᴍ.  
+<b>/skip</b> : sᴋɪᴩ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴛʀᴀᴄᴋ ᴀɴᴅ ᴘʟᴀʏ ɴᴇxᴛ ɪɴ ǫᴜᴇᴜᴇ.  
+<b>/end</b> ᴏʀ <b>/stop</b> : ᴄʟᴇᴀʀ ǫᴜᴇᴜᴇ ᴀɴᴅ sᴛᴏᴘ sᴛʀᴇᴀᴍ.  
+<b>/player</b> : ɢᴇᴛ ᴀɴ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ᴩʟᴀʏᴇʀ ᴘᴀɴᴇʟ.  
+<b>/queue</b> : sʜᴏᴡ ᴛʀᴀᴄᴋs ɪɴ ǫᴜᴇᴜᴇ.
+"""
 
-CʜᴀᴛGPT ᴄᴏᴍᴍᴀɴᴅꜱ:
+HELP_2 = """
+<b><u>ᴀᴜᴛʜ ᴜsᴇʀs :</u></b>
 
-/ask ➠ ǫᴜᴇʀɪᴇs ᴛʜᴇ ᴀɪ ᴍᴏᴅᴇʟ ᴛᴏ ɢᴇᴛ ᴀ ʀᴇsᴘᴏɴsᴇ ᴛᴏ ʏᴏᴜʀ ǫᴜᴇsᴛɪᴏɴ.
-'''
+ᴀᴜᴛʜ ᴜsᴇʀs ᴄᴀɴ ᴜsᴇ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs ᴡɪᴛʜᴏᴜᴛ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ᴛʜᴇ ᴄʜᴀᴛ.
 
-    HELP_Sticker = '''sᴛɪᴄᴋᴇʀs
+<b>/auth</b> [ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_ɪᴅ] : ᴀᴅᴅ ᴀ ᴜsᴇʀ ᴛᴏ ᴀᴜᴛʜ ʟɪsᴛ.  
+<b>/unauth</b> [ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_ɪᴅ] : ʀᴇᴍᴏᴠᴇ ᴀ ᴜsᴇʀ ғʀᴏᴍ ᴀᴜᴛʜ ʟɪsᴛ.  
+<b>/authusers</b> : sʜᴏᴡ ᴀʟʟ ᴀᴜᴛʜ ᴜsᴇʀs ɪɴ ɢʀᴏᴜᴘ.
+"""
 
-sᴛɪᴄᴋᴇʀs ᴄᴏᴍᴍᴀɴᴅꜱ:
+HELP_3 = """
+<b><u>ʙʀᴏᴀᴅᴄᴀsᴛ ғᴇᴀᴛᴜʀᴇ :</u></b> [sᴜᴅᴏᴇʀs ᴏɴʟʏ]
 
-/packkang ➠ ᴄʀᴇᴀᴛᴇs ᴀ ᴘᴀᴄᴋ ᴏғ sᴛɪᴄᴋᴇʀs ғʀᴏᴍ ᴀ ᴏᴛʜᴇʀ ᴘᴀᴄᴋ.
-/stickerid ➠ ɢᴇᴛs ᴛʜᴇ sᴛɪᴄᴋᴇʀ ɪᴅ ᴏғ ᴀ sᴛɪᴄᴋᴇʀ.
-'''
+<b>/broadcast</b> [ᴍᴇssᴀɢᴇ/ʀᴇᴩʟʏ] : sᴇɴᴅ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ᴀʟʟ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs.
 
-    HELP_TagAll = '''Tᴀɢ
+<b>ᴍᴏᴅᴇs :</b>  
+- <b>-pin</b> : ᴩɪɴ ᴛʜᴇ ᴍᴇssᴀɢᴇ.  
+- <b>-pinloud</b> : ᴩɪɴ ᴡɪᴛʜ ɴᴏᴛɪғɪᴄᴀᴛɪᴏɴ.  
+- <b>-user</b> : ʙʀᴏᴀᴅᴄᴀsᴛ ᴛᴏ ᴜsᴇʀs.  
+- <b>-assistant</b> : sᴇɴᴅ ᴠɪᴀ ᴀssɪsᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ.  
+- <b>-nobot</b> : sᴋɪᴘ sᴇɴᴅɪɴɢ ᴠɪᴀ ʙᴏᴛ.
 
-  Tᴀɢ ᴄᴏᴍᴍᴀɴᴅꜱ:
+<b>ᴇxᴀᴍᴘʟᴇ :</b> <code>/broadcast -user -assistant -pin ᴛᴇsᴛ</code>
+"""
 
-✿ ᴄʜᴏᴏsᴇ ᴛᴀɢ ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ ✿
+HELP_4 = """
+<b><u>ᴄʜᴀᴛ ʙʟᴀᴄᴋʟɪsᴛ :</u></b> [sᴜᴅᴏᴇʀs ᴏɴʟʏ]
 
-๏ /gmtag ➛ ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 
-ᴛᴀɢ sᴛᴏᴘ ⇴ /gmstop
+<b>/blacklistchat</b> [ᴄʜᴀᴛ ɪᴅ] : ʙʟᴀᴄᴋʟɪsᴛ ᴀ ᴄʜᴀᴛ.  
+<b>/whitelistchat</b> [ᴄʜᴀᴛ ɪᴅ] : ᴡʜɪᴛᴇʟɪsᴛ ᴀ ᴄʜᴀᴛ.  
+<b>/blacklistedchat</b> : sʜᴏᴡ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛs.
+"""
 
-๏ /gntag ➛ ɢᴏᴏᴅ ɴɪɢʜᴛ ᴛᴀɢ sᴛᴏᴘ ⇴ /gnstop
+HELP_5 = """
+<b><u>ʙʟᴏᴄᴋ ᴜsᴇʀs :</u></b> [sᴜᴅᴏᴇʀs ᴏɴʟʏ]
 
-๏ /tagall ➛ ʀᴀɴᴅᴏᴍ ᴍᴇssᴀɢᴇ ᴛᴀɢ sᴛᴏᴘ ⇴ /tagoff /tagstop
+<b>/block</b> [ᴜsᴇʀ] : ʙʟᴏᴄᴋ ᴀ ᴜsᴇʀ.  
+<b>/unblock</b> [ᴜsᴇʀ] : ᴜɴʙʟᴏᴄᴋ ᴀ ᴜsᴇʀ.  
+<b>/blockedusers</b> : sʜᴏᴡ ʙʟᴏᴄᴋᴇᴅ ᴜsᴇʀs.
+"""
 
-๏ /hitag ➛ ʀᴀɴᴅᴏᴍ ʜɪɴᴅɪ ᴍᴇssᴀɢᴇ ᴛᴀɢ sᴛᴏᴘ ⇴/histop
+HELP_6 = """
+<b><u>ᴄʜᴀɴɴᴇʟ ᴩʟᴀʏ :</u></b>
 
-๏ /shayari ➛ ʀᴀɴᴅᴏᴍ sʜᴀʏᴀʀɪ ᴛᴀɢ sᴛᴏᴘ ⇴ /shstop
+<b>/cplay</b> : sᴛʀᴇᴀᴍ ᴀᴜᴅɪᴏ.  
+<b>/cvplay</b> : sᴛʀᴇᴀᴍ ᴠɪᴅᴇᴏ.  
+<b>/cplayforce</b> / <b>/cvplayforce</b> : ғᴏʀᴄᴇ sᴛʀᴇᴀᴍ.  
+<b>/channelplay</b> [ᴜsᴇʀɴᴀᴍᴇ/ɪᴅ] : ᴄᴏɴɴᴇᴄᴛ ᴄʜᴀɴɴᴇʟ.
+"""
 
-๏ /utag ➛ ᴀɴʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ ᴛᴀɢ sᴛᴏᴘ ⇴ /cancel 
+HELP_7 = """
+<b><u>ɢʟᴏʙᴀʟ ʙᴀɴ :</u></b> [sᴜᴅᴏᴇʀs ᴏɴʟʏ]
 
-๏ /vctag ➛ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ɪɴᴠɪᴛᴇ ᴛᴀɢ sᴛᴏᴘ ⇴ /vcstop
-'''
+<b>/gban</b> [ᴜsᴇʀ] : ɢʟᴏʙᴀʟʟʏ ʙᴀɴ ᴀ ᴜsᴇʀ.  
+<b>/ungban</b> [ᴜsᴇʀ] : ɢʟᴏʙᴀʟʟʏ ᴜɴʙᴀɴ ᴀ ᴜsᴇʀ.  
+<b>/gbannedusers</b> : sʜᴏᴡ ɢʟᴏʙᴀʟʟʏ ʙᴀɴɴᴇᴅ ᴜsᴇʀs.
+"""
 
-    HELP_Info = '''Iɴꜰᴏ
+HELP_8 = """
+<b><u>ʟᴏᴏᴘ :</u></b>
 
-Iɴꜰᴏ ᴄᴏᴍᴍᴀɴᴅꜱ:
+<b>/loop</b> [enable/disable] : ᴛᴏɢɢʟᴇ ʟᴏᴏᴘ.  
+<b>/loop</b> [1-10] : sᴇᴛ ʟᴏᴏᴘ ᴄᴏᴜɴᴛ.
+"""
 
-/id : ɢᴇᴛ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ɢʀᴏᴜᴘ ɪᴅ. ɪғ ᴜsᴇᴅ ʙʏ ʀᴇᴘʟʏɪɴɢ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ, ɢᴇᴛs ᴛʜᴀᴛ ᴜsᴇʀ's ɪᴅ.
-/info : ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴜsᴇʀ.
-/github <ᴜsᴇʀɴᴀᴍᴇ> : ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ɢɪᴛʜᴜʙ ᴜsᴇʀ.
-'''
-    HELP_Group = '''Gʀᴏᴜᴘ
+HELP_9 = """
+<b><u>ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ :</u></b> [sᴜᴅᴏᴇʀs ᴏɴʟʏ]
 
-Gʀᴏᴜᴘ ᴄᴏᴍᴍᴀɴᴅꜱ:
+<b>/logs</b> : ɢᴇᴛ ʙᴏᴛ ʟᴏɢs.  
+<b>/logger</b> [enable/disable] : ᴛᴏɢɢʟᴇ ʟᴏɢɢɪɴɢ.  
+<b>/maintenance</b> [enable/disable] : ᴛᴏɢɢʟᴇ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ᴍᴏᴅᴇ.
+"""
 
-ᴛʜᴇsᴇ ᴀʀᴇ ᴛʜᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴄᴏᴍᴍᴀɴᴅs:
+HELP_10 = """
+<b><u>ᴘɪɴɢ & sᴛᴀᴛs :</u></b>
 
-⦿ /pin ➠ ᴘɪɴs ᴀ ᴍᴇssᴀɢᴇ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ.
-⦿ /pinned ➠ ᴅɪsᴘʟᴀʏs ᴛʜᴇ ᴘɪɴɴᴇᴅ ᴍᴇssᴀɢᴇ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ.
-⦿ /unpin ➠ ᴜɴᴘɪɴs ᴛʜᴇ ᴄᴜʀʀᴇɴᴛʟʏ ᴘɪɴɴᴇᴅ ᴍᴇssᴀɢᴇ.
-⦿ /staff ➠ ᴅɪsᴘʟᴀʏs ᴛʜᴇ ʟɪsᴛ ᴏғ sᴛᴀғғ ᴍᴇᴍʙᴇʀs.
-⦿ /bots ➠ ᴅɪsᴘʟᴀʏs ᴛʜᴇ ʟɪsᴛ ᴏғ ʙᴏᴛs ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ.
-⦿ /settitle ➠ sᴇᴛs ᴛʜᴇ ᴛɪᴛʟᴇ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ.
-⦿ /setdiscription ➠ sᴇᴛs ᴛʜᴇ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ.
-⦿ /setphoto ➠ sᴇᴛs ᴛʜᴇ ɢʀᴏᴜᴘ ᴘʜᴏᴛᴏ.
-⦿ /removephoto ➠ ʀᴇᴍᴏᴠᴇs ᴛʜᴇ ɢʀᴏᴜᴘ ᴘʜᴏᴛᴏ.
-⦿ /zombies ➠ ʀᴇᴍᴏᴠᴇs ᴀᴄᴄ ᴅᴇʟᴇᴛᴇᴅ ᴍᴇᴍʙᴇʀs ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ.
-⦿ /imposter ᴏɴ/ᴏғғ ➠ ᴛᴜʀɴs ᴏɴ ᴏʀ ᴏғғ ᴛʜᴇ ᴡᴀᴛᴄʜᴇʀ ғᴏʀ ʏᴏᴜʀ ɢʀᴏᴜᴘ, ᴡʜɪᴄʜ ɴᴏᴛɪғɪᴇs ᴀʙᴏᴜᴛ ᴜsᴇʀs ᴡʜᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇɪʀ ɴᴀᴍᴇ ᴏʀ ᴜsᴇʀɴᴀᴍᴇ.
-'''
+<b>/start</b> : sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ.  
+<b>/help</b> : ʜᴇʟᴘ ᴍᴇɴᴜ.  
+<b>/ping</b> : ᴄʜᴇᴄᴋ ᴘɪɴɢ & sʏsᴛᴇᴍ sᴛᴀᴛs.  
+<b>/stats</b> : ʙᴏᴛ sᴛᴀᴛɪsᴛɪᴄs.
+"""
 
-    HELP_Extra = '''Exᴛʀᴀ
+HELP_11 = """
+<b><u>ᴩʟᴀʏ :</u></b>
 
-Exᴛʀᴀ ᴄᴏᴍᴍᴀɴᴅꜱ:
+<b>/play</b> / <b>/vplay</b> : sᴛʀᴇᴀᴍ ᴛʀᴀᴄᴋ.  
+<b>/playforce</b> / <b>/vplayforce</b> : ғᴏʀᴄᴇ sᴛʀᴇᴀᴍ.
+"""
 
-⦿ /math ➠ sᴏʟᴠᴇs ᴍᴀᴛʜᴇᴍᴀᴛɪᴄᴀʟ ᴘʀᴏʙʟᴇᴍs ᴀɴᴅ ᴇǫᴜᴀᴛɪᴏɴs.
-⦿ /blackpink ➠ ɢᴇɴᴇʀᴀᴛᴇs ᴀ ʙʟᴀᴄᴋᴘɪɴᴋ-sᴛʏʟᴇ ʟᴏɢᴏ.
-⦿ /carbon ➠ ɢᴇɴᴇʀᴀᴛᴇs ᴀ ᴄᴀʀʙᴏɴ ᴄᴏᴅᴇ ɪᴍᴀɢᴇ ғʀᴏᴍ ᴀ ᴄᴏᴅᴇ sɴɪᴘᴘᴇᴛ.
-⦿ /speedtest ➠ ᴍᴇᴀsᴜʀᴇs ᴛʜᴇ ɪɴᴛᴇʀɴᴇᴛ sᴘᴇᴇᴅ.
-⦿ /reverse ➠ ʀᴇᴠᴇʀsᴇs ᴀ ɢɪᴠᴇɴ ᴛᴇxᴛ.
-⦿ /webss ➠ ᴛᴀᴋᴇs ᴀ sᴄʀᴇᴇɴsʜᴏᴛ ᴏғ ᴀ ᴡᴇʙsɪᴛᴇ.
-⦿ /paste ➠ ᴜᴘʟᴏᴀᴅs ᴀ ᴛᴇxᴛ sɴɪᴘᴘᴇᴛ ᴛᴏ ᴛʜᴇ ᴄʟᴏᴜᴅ ᴀɴᴅ ɢɪᴠᴇs ᴀ ʟɪɴᴋ.
-⦿ /tgm ➠ ᴜᴘʟᴏᴀᴅs ᴀ ᴘʜᴏᴛᴏ (ᴜɴᴅᴇʀ 𝟻ᴍʙ) ᴛᴏ ᴛʜᴇ ᴄʟᴏᴜᴅ ᴀɴᴅ ɢɪᴠᴇs ᴀ ʟɪɴᴋ.
-⦿ /tr ➠ ᴛʀᴀɴsʟᴀᴛᴇs ᴛᴇxᴛ.
-⦿ /google ➠ sᴇᴀʀᴄʜᴇs ғᴏʀ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴏɴ ɢᴏᴏɢʟᴇ.
-⦿ /stack ➠ sᴇᴀʀᴄʜᴇs ғᴏʀ ᴘʀᴏɢʀᴀᴍᴍɪɴɢ-ʀᴇʟᴀᴛᴇᴅ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴏɴ sᴛᴀᴄᴋ ᴏᴠᴇʀғʟᴏᴡ.
-'''
+HELP_12 = """
+<b><u>sʜᴜғғʟᴇ :</u></b>
 
-    HELP_Image = '''Iᴍᴀɢᴇ
+<b>/shuffle</b> : sʜᴜғғʟᴇ ǫᴜᴇᴜᴇ.  
+<b>/queue</b> : sʜᴏᴡ ǫᴜᴇᴜᴇ.
+"""
 
-Iᴍᴀɢᴇ ᴄᴏᴍᴍᴀɴᴅꜱ:
+HELP_13 = """
+<b><u>sᴇᴇᴋ :</u></b>
 
-⦿ /draw ➠ ɢᴇɴᴇʀᴀᴛᴇs ᴀ ᴅʀᴀᴡɪɴɢ ʙᴀsᴇᴅ ᴏɴ ᴀ ɢɪᴠᴇɴ ᴘᴏʀᴏᴍᴘᴛ.
-⦿ /upscale ➠ ʀᴇᴘʟʏ ᴛᴏ ᴀɴ ɪᴍᴀɢᴇ ᴛᴏ ᴜᴘsᴄᴀʟᴇ ɪᴛ ᴀɴᴅ ɪᴍᴘʀᴏᴠᴇ ɪᴛs ǫᴜᴀʟɪᴛʏ.
-'''
-    HELP_Action = '''Aᴄᴛɪᴏɴ
+<b>/seek</b> [sᴇᴄs] : sᴇᴇᴋ ғᴏʀᴡᴀʀᴅ.  
+<b>/seekback</b> [sᴇᴄs] : sᴇᴇᴋ ʙᴀᴄᴋᴡᴀʀᴅ.
+"""
 
-Aᴄᴛɪᴏɴ ᴄᴏᴍᴍᴀɴᴅꜱ:
+HELP_14 = """
+<b><u>sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅ :</u></b>
 
-» ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ꜰᴏʀ Bᴀɴs & Mᴜᴛᴇ :
+<b>/song</b> [ɴᴀᴍᴇ/ʏᴛ ᴜʀʟ] : ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴘ3/ᴍᴘ4 ғʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ.
+"""
 
- ❍ /kickme: kicks the user who issued the command
+HELP_15 = """
+<b><u>sᴘᴇᴇᴅ :</u></b>
 
-Admins only:
- ❍ /ban <userhandle>: bans a user. (via handle, or reply)
- ❍ /sban <userhandle>: Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)
- ❍ /tban <userhandle> x(m/h/d): bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
- ❍ /unban <userhandle>: unbans a user. (via handle, or reply)
- ❍ /kick <userhandle>: kicks a user out of the group, (via handle, or reply)
- ❍ /mute <userhandle>: silences a user. Can also be used as a reply, muting the replied to user.
- ❍ /tmute <userhandle> x(m/h/d): mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
- ❍ /unmute <userhandle>: unmutes a user. Can also be used as a reply, muting the replied to user.
-__
-𝐒ᴘᴇᴄɪᴀʟ 𝐂ᴏᴍᴍᴀɴᴅs 𝐒ᴜᴘᴘᴏʀᴛ 𝐀ʟʟ 𝐄xᴀᴍᴘʟᴇ  - 𝚈𝚞𝚖𝚒 𝚋𝚊𝚗 𝚈𝚞𝚖𝚒 𝚖𝚞𝚝𝚎 𝚈𝚞𝚖𝚒 𝚙𝚛𝚘𝚖𝚘𝚝𝚎 ..... 𝚎𝚝𝚌
-'''
-    HELP_Search = '''Sᴇᴀʀᴄʜ
-
-Sᴇᴀʀᴄʜ ᴄᴏᴍᴍᴀɴᴅꜱ:
-
-• /google <query> : Search the google for the given query.
-• /anime <query>  : Search myanimelist for the given query.
-• /stack <query>  : Search stackoverflow for the given query.
-
-
-    HELP_Font = '''ғᴏɴᴛ
-
-ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ ғᴏɴᴛ ᴍᴏᴅᴜʟᴇ:
-
-ғᴏɴᴛ ᴍᴏᴅᴜʟᴇ:
-
-ʙʏ ᴜsɪɴɢ ᴛʜɪs ᴍᴏᴅᴜʟᴇ ʏᴏᴜ ᴄᴀɴ ᴄʜᴀɴɢᴇ ғᴏɴᴛs ᴏғ ᴀɴʏ ᴛᴇxᴛ!
-
-◌ [/font]
-'''
-    HELP_Game = '''ɢᴀᴍᴇs
-
-ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ ɢᴀᴍᴇs ᴍᴏᴅᴜʟᴇ:
-ɢᴀᴍᴇs ᴍᴏᴅᴜʟᴇ:
-
-ʜᴇʀᴇ ᴀʀᴇ sᴏᴍᴇ ᴍɪɴɪ ɢᴀᴍᴇs ғᴏʀ ʏᴏᴜ ᴛᴏ ᴘʟᴀʏ!
-
-◌ /toss [ᴛᴏss ᴀ ᴄᴏɪɴ]
-
-◌ /roll [ʀᴏʟʟ ᴀ ᴅɪᴄᴇ]
-
-◌ /dart [ᴛʜʀᴏᴡ ᴀ ᴅᴀʀᴛ]
-
-◌ /slot [Jᴀᴄᴋᴘᴏᴛ ᴍᴀᴄʜɪɴᴇ]
-
-◌ /bowling [ʙᴏᴡʟɪɴɢ ɢᴀᴍᴇ]
-
-◌ /basket [ʙᴀsᴋᴇᴛʙᴀʟʟ ɢᴀᴍᴇ]
-
-◌ /football [ғᴏᴏᴛʙᴀʟʟ ɢᴀᴍᴇ]
-'''
-    HELP_TG = '''Ⓣ-ɢʀᴀᴘʜ
-
-Ⓣ-ɢʀᴀᴘʜ ᴄᴏᴍᴍᴀɴᴅꜱ:
-
-ᴄʀᴇᴀᴛᴇ ᴀ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ ᴀɴʏ ᴍᴇᴅɪᴀ!
-
-◌ /tgm [ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇᴅɪᴀ]
-◌ /tgt [ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇᴅɪᴀ]
-'''
-    HELP_Imposter = '''ɪᴍᴘᴏsᴛᴇʀ
-
-ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ ɪᴍᴘᴏsᴛᴇʀ ᴍᴏᴅᴜʟᴇ:
-
-ɪᴍᴘᴏsᴛᴇʀ ᴍᴏᴅᴜʟᴇ:
-
-◌ /imposter on
-◌ /imposter off
-'''
-    HELP_TD = '''Tʀᴜᴛʜ-ᗪᴀʀᴇ
-
-ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ Tʀᴜᴛʜ-ᗪᴀʀᴇ ᴍᴏᴅᴜʟᴇ:
-
-ᴛʀᴜᴛʜ ᴀɴᴅ ᴅᴀʀᴇ
-◌ /truth : sᴇɴᴅs ᴀ ʀᴀɴᴅᴏᴍ ᴛʀᴜᴛʜ sᴛʀɪɴɢ.
-◌ /dare : sᴇɴᴅs ᴀ ʀᴀɴᴅᴏᴍ ᴅᴀʀᴇ sᴛʀɪɴɢ.
-'''
-    HELP_HT = '''ʜᴀsᴛᴀɢ
-
-ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ ʜᴀsᴛᴀɢ ᴍᴏᴅᴜʟᴇ:
-
-ʜᴀsᴛᴀɢ
-◌ /hastag : [ᴛᴇxᴛ]
-'''
-    HELP_TTS = '''ᴛᴛs
-
-ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ ᴛᴛs ᴍᴏᴅᴜʟᴇ:
-
-❀ ᴛᴛs
-◌ /tts : [ᴛᴇxᴛ]
-
-◌ ᴜsᴀɢᴇ ➛ ᴛᴇxᴛ ᴛᴏ ᴀᴜᴅɪᴏ
-'''
-    HELP_Fun = '''ғᴜɴ
-
-ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ ғᴜɴ ᴍᴏᴅᴜʟᴇ:
-ᴡɪsʜ ᴍᴏᴅᴜʟᴇ:
-
-◌ /wish : ᴀᴅᴅ ʏᴏᴜʀ ᴡɪsʜ ᴀɴᴅ sᴇᴇ ɪᴛs ᴘᴏssɪʙɪʟɪᴛʏ!
-
-ᴍᴏʀᴇ sᴛᴜғғ:
-◌ /sigma [ᴄʜᴇᴄᴋ ʏᴏᴜʀ sɪɢᴍᴀɴᴇss]
-◌ /cute [ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴜᴛᴇɴᴇss]
-◌ /horny [ᴄʜᴇᴄᴋ ʏᴏᴜʀ ʜᴏʀɴʏɴᴇss]
-◌ /lesbo [ᴄʜᴇᴄᴋ ʜᴏᴡ ᴍᴜᴄʜ ʟᴇᴢʙɪᴀɴ ʏᴏᴜ ᴀʀᴇ]
-◌ /depressed [ᴄʜᴇᴄᴋ ʜᴏᴡ ᴍᴜᴄʜ ᴅᴇᴘʀᴇssᴇᴅ ʏᴏᴜ ᴀʀᴇ]
-◌ /gay [ᴄʜᴇᴄᴋ ʜᴏᴡ ᴍᴜᴄʜ ɢᴀʏ ʏᴏᴜ ᴀʀᴇ]
-◌ /rand [ᴄʜᴇᴄᴋ ʜᴏᴡ ᴍᴜᴄʜ ʀᴀɴᴅ ʏᴏᴜ ᴀʀᴇ]
-◌ /bkl [ᴄʜᴇᴄᴋ ʜᴏᴡ ᴍᴜᴄʜ ʙᴋʟ ʏᴏᴜ ᴀʀᴇ]
-◌ /boobs [ᴄʜᴇᴄᴋ ʏᴏᴜʀ ʙᴏᴏʙɪᴇs sɪᴢᴇ]
-◌ /dick [ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴅɪᴄᴋ sɪᴢᴇ]
-'''
-    HELP_Q = '''ǫᴜᴏᴛʟʏ
-
-ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴛʜᴇ ǫᴜᴏᴛʟʏ ᴍᴏᴅᴜʟᴇ:
-
-◌ /q : ᴄʀᴇᴀᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇssᴀɢᴇ
-
-◌ /q r : ᴄʀᴇᴀᴛᴇ ᴀ ǫᴜᴏᴛᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ ʀᴇᴘʟʏ
-'''
-
-
-    fullpromote = {
-    'can_change_info': True,
-    'can_post_messages': True,
-    'can_edit_messages': True,
-    'can_delete_messages': True,
-    'can_invite_users': True,
-    'can_restrict_members': True,
-    'can_pin_messages': True,
-    'can_promote_members': True,
-    'can_manage_chat': True,
-}
-
-    promoteuser = {
-    'can_change_info': False,
-    'can_post_messages': True,
-    'can_edit_messages': True,
-    'can_delete_messages': False,
-    'can_invite_users': True,
-    'can_restrict_members': False,
-    'can_pin_messages': False,
-    'can_promote_members': False,
-    'can_manage_chat': True,
-}
+<b>/speed</b> / <b>/playback</b> : ᴀᴅᴊᴜsᴛ ɢʀᴏᴜᴘ ᴘʟᴀʏʙᴀᴄᴋ sᴘᴇᴇᴅ.  
+<b>/cspeed</b> / <b>/cplayback</b> : ᴀᴅᴊᴜsᴛ ᴄʜᴀɴɴᴇʟ ᴘʟᴀʏʙᴀᴄᴋ sᴘᴇᴇᴅ.
+"""
