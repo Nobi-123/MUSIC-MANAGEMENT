@@ -26,7 +26,7 @@ ASSUSERNAME = getenv("ASSUSERNAME" , "sexyKakrox")
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://deepak-bot:LoRm7nrAqVs2xncW@cluster0.hnp8icx.mongodb.net/?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://cardiomusic4:cardiomusic4@cluster0.4n3ee1d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 
