@@ -19,7 +19,6 @@ async def wish(_, m):
     wish = f"✨ ʜᴇʏ! {m.from_user.first_name}! "
     wish += f"✨ ʏᴏᴜʀ ᴡɪꜱʜ: {text} "
     wish += f"✨ ᴘᴏꜱꜱɪʙʟᴇ ᴛᴏ: {wish_count}%"
-    
     await app.send_animation(
         chat_id=m.chat.id,
         animation=url,
