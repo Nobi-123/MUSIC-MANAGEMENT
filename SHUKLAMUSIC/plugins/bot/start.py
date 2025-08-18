@@ -27,18 +27,6 @@ from SHUKLAMUSIC.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
-SHASHANK_PH = ["https://files.catbox.moe/y4q8we.jpg",
-          "https://files.catbox.moe/3hvb0e.jpg",
-          "https://files.catbox.moe/ik2y3y.jpg",
-          "https://files.catbox.moe/eand9z.jpg",
-          "https://files.catbox.moe/7a6tgh.jpg",
-          "https://files.catbox.moe/tx4utv.jpg",
-          "https://files.catbox.moe/ymaina.jpg",
-          "https://files.catbox.moe/u5ksfg.jpg",
-          "https://files.catbox.moe/zozepo.jpg",
-          "https://files.catbox.moe/b8ovsd.jpg",
-          "https://files.catbox.moe/nmqgei.jpg"]
-
 SHASHANK_PH = [
     "https://files.catbox.moe/jrupn9.jpg",
     "https://files.catbox.moe/5z141p.jpg",
