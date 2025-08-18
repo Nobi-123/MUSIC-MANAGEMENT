@@ -1,6 +1,6 @@
 <h2 align="center">
  
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=WELCOME+TO+IROMUSIC+V2)](https://github.com/IR-O/IROMUSIC)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=WELCOME+TO+IVANMUSIC+V2)](https://github.com/IR-O/IROMUSIC)
 </h2>
 
 <h2 align="center">
